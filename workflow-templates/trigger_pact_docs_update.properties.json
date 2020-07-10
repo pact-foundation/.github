@@ -1,0 +1,8 @@
+{
+    "name": "Trigger update to docs.pact.io",
+    "description": "Triggers a sync workflow in docs.pact.io",
+    "iconName": "sync-icon",
+    "filePatterns": [
+        "*.md"
+    ]
+}
