@@ -1,0 +1,8 @@
+{
+    "name": "Release Pact Foundation gem to Rubygems",
+    "description": "Bump version, generate changelog, release gem to Rubygems, create Github release notes",
+    "iconName": "rubygem-icon",
+    "filePatterns": [
+        "*.rb"
+    ]
+}
