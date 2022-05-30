@@ -44,4 +44,4 @@ Pact CLI tools + Pact Broker = powerful automation capabilities
 
 ## Stats
 
-![Metrics](../github-metrics.svg)
+![Metrics](https://github.com/pact-foundation/.github/blob/master/github-metrics.svg)
