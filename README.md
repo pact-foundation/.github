@@ -12,7 +12,7 @@
 
 ### Find bugs in dev
 ![dev](https://raw.githubusercontent.com/pact-foundation/pact.io/master/pages/assets/img/icons/theme/devices/laptop-macbook.svg)
-Prevent integration issues before you commit, instead of in production or during integration test Prevent integration issues before you commit, instead of in production or during integration test
+Prevent integration issues before you commit, instead of in production or during integration test
 
 ### Deploy faster, safer & more often
 ![dev](https://raw.githubusercontent.com/pact-foundation/pact.io/master/pages/assets/img/icons/theme/general/thunder-move.svg) 
