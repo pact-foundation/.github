@@ -19,7 +19,7 @@ jobs:
       id: search
       uses: tomhjp/gh-action-jira-search@v0.1.0
       with:
-        jql: 'summary ~ "${{ github.event.repository.name }}#${{ github.event.issue.number }}:" AND project=${{ secrets.SMARTBEAR_JIRA_PROJECT }}'
+        jql: 'summary ~ "${{ github.event.repository.name }}#${{ github.event.issue.number }}:" AND project=${{ env.SMARTBEAR_JIRA_PROJECT }}'
 
     - name: Log
       run: echo "Found issue ${{ steps.search.outputs.issue }}"
@@ -29,7 +29,7 @@ jobs:
       uses: atlassian/gajira-create@v3
       if: steps.search.outputs.issue == ''
       with:
-        project: ${{ secrets.SMARTBEAR_JIRA_PROJECT }}
+        project: ${{ env.SMARTBEAR_JIRA_PROJECT }}
         issuetype: Task
         summary: '${{ github.event.repository.name }}#${{ github.event.issue.number }}: ${{ github.event.issue.title }}'
         description: |
@@ -49,5 +49,5 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: '👋 Thanks, this ticket has been added to the PactFlow team's backlog as ${{steps.create.outputs.issue}}'
+            body: `👋 Thanks, this ticket has been added to the PactFlow team's backlog as ${{steps.create.outputs.issue}}`
           })
