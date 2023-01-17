@@ -4,7 +4,7 @@ on:
   workflow_call:
 
 jobs:
-  jira:
+  create-issue-in-pactflow-jira:
     runs-on: ubuntu-latest
     if: github.event.label.name == 'smartbear-supported'
     steps:
