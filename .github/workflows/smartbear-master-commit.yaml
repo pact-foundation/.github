@@ -1,0 +1,37 @@
+name: Commit to Master
+
+# This could be dangerous as it will close tickets based on the string it finds
+# in the commit message.
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  on_commit:
+    runs-on: ubuntu-latest
+    name: Transition Jira ticket to Close
+    steps:
+    - name: login
+      uses: atlassian/gajira-login@v3
+      env:
+        JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
+        JIRA_USER_EMAIL: ${{ secrets.JIRA_USER_EMAIL }}
+        JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+
+    - run: echo ${{ github.event.head_commit.message }}
+
+    - name: Find Issue
+      id: find
+      uses: atlassian/gajira-find-issue-key@v3
+      with:
+        string: ${{ github.event.head_commit.message }}
+
+    - run: echo "${{ steps.find.outputs.issue }}"
+
+    - name: Transition issue
+      uses: atlassian/gajira-transition@v3
+      with:
+        issue: ${{ steps.find.outputs.issue }}
+        transition: "Done"
