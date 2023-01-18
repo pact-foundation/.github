@@ -22,7 +22,7 @@ jobs:
       id: search
       uses: tomhjp/gh-action-jira-search@v0.1.0
       with:
-        jql: 'summary ~ ${{ toJSON(github.event.issue.title)}} AND project=${{ secrets.SMARTBEAR_JIRA_PROJECT }}'
+        jql: 'summary ~ "${{ github.event.repository.name }}#${{ github.event.issue.number }}:" AND project=${{ vars.SMARTBEAR_JIRA_PROJECT }}'
 
     - name: Create
       uses: atlassian/gajira-create@v3
@@ -30,7 +30,7 @@ jobs:
       with:
         project: ${{ secrets.SMARTBEAR_JIRA_PROJECT }}
         issuetype: Task
-        summary: ${{ github.event.issue.title }}
+        summary: '${{ github.event.repository.name }}#${{ github.event.issue.number }}: ${{ github.event.issue.title }}'
         description: |
           *Issue Link:* ${{ github.event.issue.html_url }}
           
@@ -41,7 +41,7 @@ jobs:
       uses: actions-ecosystem/action-add-labels@v1
       if: steps.create.outputs.issue != ''
       with:
-        labels: jira
+        labels: smartbear-supported
 
     - name: Add Comment 
       if: steps.search.outputs.issue == '' && steps.create.outputs.issue != ''
