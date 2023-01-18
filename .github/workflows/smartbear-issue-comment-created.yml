@@ -19,15 +19,12 @@ jobs:
         SMARTBEAR_JIRA_USER_EMAIL: ${{ secrets.SMARTBEAR_JIRA_USER_EMAIL }}
         SMARTBEAR_JIRA_API_TOKEN: ${{ secrets.SMARTBEAR_JIRA_API_TOKEN }}
         ISSUE_TITLE: ${{ github.event.issue.title }}
-    
-    - name: SearchParam
-      run: echo 'summary ~ ${{ toJSON($ISSUE_TITLE)}} AND project=${{ secrets.SMARTBEAR_JIRA_PROJECT }}'
-    
+     
     - name: Search
       id: search
       uses: tomhjp/gh-action-jira-search@v0.1.0
       with:
-        jql: "summary ~ ${{ toJSON($ISSUE_TITLE)}} AND project=${{ secrets.SMARTBEAR_JIRA_PROJECT }}"
+        jql: 'summary ~ "${{ github.event.repository.name }}#${{ github.event.issue.number }}:" AND project=${{ vars.SMARTBEAR_JIRA_PROJECT }}'
     
     - name: Log
       run: echo "Found issue ${{ steps.search.outputs.issue }}"
