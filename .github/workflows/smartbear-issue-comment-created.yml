@@ -8,7 +8,7 @@ on:
 jobs:
   jira:
     runs-on: ubuntu-latest
-    if: ${{ github.event.comment.body == '/smartbear-supported ticket' }}
+    if: ${{ github.event.comment.body == '/smartbear-supported issue' }}
     steps:
     - run: echo ${{ github.event.comment.body }}
     
