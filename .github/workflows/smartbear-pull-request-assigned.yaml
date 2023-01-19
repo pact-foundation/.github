@@ -1,0 +1,40 @@
+name: SmartBear Supported Pull Request Assigned
+
+# Example of trigger for this workflow:
+#
+# on:
+#   pull_request:
+#     types: 
+#       - assigned
+
+on:
+  workflow_call:  
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Jira ticket transitioned to In Review
+    steps:
+    - name: login
+      uses: atlassian/gajira-login@v3
+      env:
+        JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
+        JIRA_USER_EMAIL: ${{ secrets.JIRA_USER_EMAIL }}
+        JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+
+    - run: echo ${{ github.event.pull_request.title }}
+
+    - name: Find Issue
+      id: find
+      uses: atlassian/gajira-find-issue-key@v3
+      with:
+        string: ${{ github.event.pull_request.title }}
+
+    - run: echo "${{ steps.find.outputs.issue }}"
+
+    - name: Transition issue
+      if: steps.find.outputs.issue != ''
+      uses: atlassian/gajira-transition@v3
+      with:
+        issue: ${{ steps.find.outputs.issue }}
+        transition: "In Progress"

@@ -1,55 +1,58 @@
-name: SmartBear Supported Issue Label Added
+name: SmartBear Supported Issue Comment Created
 
 # Example of trigger for this workflow:
 #
 # on:
-#   issues:
+#   issue_comment:
 #     types:
-#       - labeled
+#       - created
 
 on:
   workflow_call:
 
 jobs:
-  create-issue-in-pactflow-jira:
+  jira:
     runs-on: ubuntu-latest
-    if: github.event.label.name == 'smartbear-supported'
+    if: ${{ github.event.comment.body == '/smartbear-supported issue' }}
     steps:
+    - run: echo ${{ github.event.comment.body }}
+    
     - name: Login
       uses: atlassian/gajira-login@v3
       env:
-        JIRA_BASE_URL: ${{ secrets.SMARTBEAR_JIRA_BASE_URL }}
-        JIRA_USER_EMAIL: ${{ secrets.SMARTBEAR_JIRA_USER_EMAIL }}
-        JIRA_API_TOKEN: ${{ secrets.SMARTBEAR_JIRA_API_TOKEN }}
-
+        SMARTBEAR_JIRA_BASE_URL: ${{ secrets.SMARTBEAR_JIRA_BASE_URL }}
+        SMARTBEAR_JIRA_USER_EMAIL: ${{ secrets.SMARTBEAR_JIRA_USER_EMAIL }}
+        SMARTBEAR_JIRA_API_TOKEN: ${{ secrets.SMARTBEAR_JIRA_API_TOKEN }}
+        ISSUE_TITLE: ${{ github.event.issue.title }}
+     
     - name: Search
       id: search
       uses: tomhjp/gh-action-jira-search@v0.1.0
       with:
         jql: 'summary ~ "${{ github.event.repository.name }}#${{ github.event.issue.number }}:" AND project=${{ vars.SMARTBEAR_JIRA_PROJECT }}'
-
+    
     - name: Log
       run: echo "Found issue ${{ steps.search.outputs.issue }}"
-
+    
     - name: Create
       id: create
-      uses: atlassian/gajira-create@v3
       if: steps.search.outputs.issue == ''
+      uses: atlassian/gajira-create@v3
       with:
-        project: ${{ vars.SMARTBEAR_JIRA_PROJECT }}
+        project: ${{ secrets.SMARTBEAR_JIRA_PROJECT }}
         issuetype: Task
         summary: '${{ github.event.repository.name }}#${{ github.event.issue.number }}: ${{ github.event.issue.title }}'
         description: |
           *Issue Link:* ${{ github.event.issue.html_url }}
-
+          
           ${{ github.event.issue.body }}
         fields: '{"customfield_10006": ${{ toJSON(secrets.SMARTBEAR_JIRA_EPIC_TICKET) }}, "customfield_17401":{"value":${{ toJSON( secrets.SMARTBEAR_JIRA_LAYER_CAKE )}}}}'
-
-    - name: Add Comment
+          
+    - name: Add Comment 
       if: steps.search.outputs.issue == '' && steps.create.outputs.issue != ''
       uses: actions/github-script@v5
       with:
-        github-token: ${{secrets.GITHUB_TOKEN }}
+        github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
           github.rest.issues.createComment({
             issue_number: context.issue.number,
