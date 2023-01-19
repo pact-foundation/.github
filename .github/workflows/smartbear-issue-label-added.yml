@@ -1,5 +1,12 @@
 name: SmartBear Supported Issue Label Added
 
+# Example of trigger for this workflow:
+#
+# on:
+#   issues:
+#     types:
+#       - labeled
+
 on:
   workflow_call:
 

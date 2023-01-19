@@ -1,10 +1,14 @@
+name: SmartBear Supported Issue Opened
 
-name: Issue Opened
+# Example of trigger for this workflow:
+#
+# on:
+#   issues:
+#     types:
+#       - opened
 
 on:
-  issues:
-    types:
-      - opened
+  workflow_call:
 
 jobs:
   build:

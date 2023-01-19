@@ -1,10 +1,15 @@
-name: Pull Request Assigned
+name: SmartBear Supported Pull Request Assigned
+
+# Example of trigger for this workflow:
+#
+# on:
+#   pull_request:
+#     types: 
+#       - assigned
 
 on:
-  pull_request:
-    types: 
-      - assigned
-
+  workflow_call:  
+    
 jobs:
   build:
     runs-on: ubuntu-latest

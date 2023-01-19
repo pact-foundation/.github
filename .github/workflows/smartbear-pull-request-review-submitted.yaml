@@ -1,9 +1,14 @@
-name: Pull Request Review Submitted
+name: SmartBear Supported Pull Request Review Submitted
+
+# Example of trigger for this workflow
+
+# on:
+#  pull_request_review:
+#    types:
+#      - submitted
 
 on:
-  pull_request_review:
-    types:
-      - submitted
+  workflow_call:      
 
 jobs:
   change_requested:

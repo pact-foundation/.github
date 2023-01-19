@@ -1,12 +1,17 @@
-name: Pull Request Comment Created
+name: SmartBear Supported Pull Request Comment Created
 
-# Once the code author commits all changes to branch, and PR updated, 
+# Scenario: Once the code author commits all changes to branch, and PR updated, 
 # they can comment with "/done"
 
-on:
-  issue_comment:                                     
-    types: [created]
+# Example of trigger for this workflow:
+#
+# on:
+#   issue_comment:                                     
+#     types: [created]
 
+on:
+  workflow_call:  
+    
 jobs:
   build:
     runs-on: ubuntu-latest

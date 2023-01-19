@@ -1,9 +1,14 @@
-name: Branch Created
+name: SmartBear Supported Branch Created
+
+# Example of trigger for this workflow:
+#
+# on:
+#   create:
+#     branches:
+#       - 'feature/**'
 
 on:
-  create:
-    branches:
-      - 'feature/**'
+  workflow_call:
 
 jobs:
   build:

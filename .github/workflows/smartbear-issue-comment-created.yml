@@ -1,9 +1,14 @@
-name: Issue Comment Created
+name: SmartBear Supported Issue Comment Created
+
+# Example of trigger for this workflow:
+#
+# on:
+#   issue_comment:
+#     types:
+#       - created
 
 on:
-  issue_comment:
-    types:
-      - created
+  workflow_call:
 
 jobs:
   jira:
