@@ -50,7 +50,7 @@ jobs:
           
     - name: Add Comment 
       if: steps.search.outputs.issue == '' && steps.create.outputs.issue != ''
-      uses: actions/github-script@v5
+      uses: actions/github-script@v6
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
@@ -58,5 +58,5 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: `👋 Thanks, this ticket has been added to the PactFlow team's backlog as ${{steps.create.outputs.issue}}`
+            body: "👋 Hi! 'smartbear-supported' label has just been added to this issue, which will create an internal tracking ticket in PactFlow's Jira (${{steps.create.outputs.issue}}). We will use this to prioritise and assign a team member to this task. All activity will be public on this ticket. <br/>For now, sit tight and we'll update this ticket once we have more information on the next steps. <br/>See <a href='https://docs.pact.io/help/smartbear' target='_blank'>documentaiton</a> for more information."
           })
