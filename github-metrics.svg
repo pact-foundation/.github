@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1488" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="2035" class="">
     <defs>
         <style/>
     </defs>
-    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.center{justify-content:center}.horizontal-wrap{flex-wrap:wrap}.no-wrap{white-space:nowrap}#metrics-end,.fill-width{width:100%}.no-margin-top{margin-top:0}.avatar{border-radius:50%;margin:0 6px}.organization.avatar{border-radius:15%}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.field.language.details{display:flex;justify-content:space-between}.field.language.details small,.field.license.details small{display:flex;justify-content:space-between;color:#666;text-align:right}.field.language.details small&gt;*,.field.language.details&gt;*{flex:1 1 0}.field.language.details small&gt;:not(:last-child){margin-right:6px}.followup.legend{font-size:12px;flex-wrap:wrap}.followup.legend .field{width:46%;justify-content:flex-start;margin-left:8px}.followup.legend svg{margin:0 3px;width:14px;height:14px}.followup.legend svg:first-child{margin-left:0}.followup.legend svg:last-child{margin-right:0}.followup-title{white-space:initial}footer{margin-top:8px;font-size:10px;font-style:italic;color:#666;text-align:right;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4px}.gauge{stroke-linecap:round;fill:none}.gauge.info{color:#58a6ff}.gauge-arc,.gauge-base{stroke:currentColor;stroke-width:10}.gauge-base{stroke-opacity:.2}.gauge-arc{fill:none;stroke-dashoffset:0;animation-delay:250ms;animation:animation-gauge 1s ease forwards}.gauge text{fill:currentColor;font-size:40px;font-family:monospace;text-anchor:middle;font-weight:600}.gauge .title{font-size:18px;color:#777}.repository{display:flex;flex-direction:column;width:100%;margin:6px 0}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .field .content{flex-grow:1;text-overflow:ellipsis;overflow:hidden}.activity .issue,.activity .repo{display:inline;color:#58a6ff}.activity .code,code,span.code{background-color:#7777771f;border-radius:6px;color:#777;padding:1px 5px;font-size:80%;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .code,span.code{margin:0 4px -3px}.activity .user{font-weight:600}.activity .details{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}.activity .commit{display:flex;align-items:center}.activity .details&gt;.comment{overflow:hidden;text-overflow:ellipsis;display:block;width:420px;margin-top:6px;border-left:3px solid #777777b2;padding-left:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.added{color:#3fb950}.people{padding:0 10px}.people .avatar{margin:0 2px}.field.license.details{display:flex;justify-content:space-between}.achievement{display:flex;margin:4px 0}.achievement .icon{margin:0 4px;width:44px;height:44px}.achievement .text{font-size:12px;color:#666}.achievement .title{font-size:14px;color:#58a6ff}.achievement .gauge.info{color:#58a6ff}.achievement.x .title{color:#666}.achievement.x .gauge.info{color:#b0b0b0}.achievement.b .title{color:#9d8fff}.achievement.b .gauge.info{color:#9e91ff}.achievement.a .title{color:#d79533}.achievement.a .gauge.info{color:#e7bd69}.achievement.s .gauge.info,.achievement.s .title{color:#eb355e}.achievement .gh{border:1px solid currentColor;border-radius:16px;font-size:10px;padding:0 5px;white-space:nowrap}.achievement .gauge-arc,.achievement .gauge-base{stroke-width:6}code{display:inline-block}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
+    <style>@keyframes animation-gauge{0%{stroke-dasharray:0 329}}@keyframes animation-rainbow{0%,to{color:#7f00ff;fill:#7f00ff}14%{color:#a933ff;fill:#a933ff}29%{color:#007fff;fill:#007fff}43%{color:#00ff7f;fill:#00ff7f}57%{color:#ff0;fill:#ff0}71%{color:#ff7f00;fill:#ff7f00}86%{color:red;fill:red}}svg{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;color:#777}h1,h2,h3{margin:8px 0 2px;padding:0;color:#0366d6}h1{font-size:20px;font-weight:700}h2,h3{font-weight:400}h1 svg,h2 svg,h3 svg{fill:currentColor}h2{font-size:16px}h3{font-size:14px}section&gt;.field{margin-left:5px;margin-right:5px}.field{display:flex;align-items:center;margin-bottom:2px;white-space:nowrap}.field svg{margin:0 8px;fill:#959da5;flex-shrink:0}.field.error{color:#cb2431}.field.error svg{fill:#cb2431}.row{display:flex;flex-wrap:wrap}.row section{flex:1 1 0}.column{display:flex;flex-direction:column;align-items:center}.center{justify-content:center}.horizontal-wrap{flex-wrap:wrap}.no-wrap{white-space:nowrap}#metrics-end,.fill-width{width:100%}.no-margin-top{margin-top:0}.avatar{border-radius:50%;margin:0 6px}.organization.avatar{border-radius:15%}svg.bar{margin:4px 0}.field.language{margin:0 8px;flex-grow:0}.field.language.details{display:flex;justify-content:space-between}.field.language.details small,.field.license.details small{display:flex;justify-content:space-between;color:#666;text-align:right}.field.language.details small&gt;*,.field.language.details&gt;*{flex:1 1 0}.field.language.details small&gt;:not(:last-child){margin-right:6px}.followup.legend{font-size:12px;flex-wrap:wrap}.followup.legend .field{width:46%;justify-content:flex-start;margin-left:8px}.followup.legend svg{margin:0 3px;width:14px;height:14px}.followup.legend svg:first-child{margin-left:0}.followup.legend svg:last-child{margin-right:0}.followup-title{white-space:initial}footer{margin-top:8px;font-size:10px;font-style:italic;color:#666;text-align:right;display:flex;flex-direction:column;justify-content:flex-end;padding:0 4px}.gauge{stroke-linecap:round;fill:none}.gauge.info{color:#58a6ff}.gauge-arc,.gauge-base{stroke:currentColor;stroke-width:10}.gauge-base{stroke-opacity:.2}.gauge-arc{fill:none;stroke-dashoffset:0;animation-delay:250ms;animation:animation-gauge 1s ease forwards}.gauge text{fill:currentColor;font-size:40px;font-family:monospace;text-anchor:middle;font-weight:600}.gauge .title{font-size:18px;color:#777}.repository{display:flex;flex-direction:column;width:100%;margin:6px 0}.activity{margin-bottom:12px}.activity .field{width:100%;overflow:hidden;text-overflow:ellipsis;max-width:450px;white-space:nowrap;margin-bottom:0}.activity .field .content{flex-grow:1;text-overflow:ellipsis;overflow:hidden}.activity .commit .sha,.activity .issue,.activity .repo{display:inline;color:#58a6ff}.activity .code,span.code{background-color:#7777771f;padding:1px 5px;font-size:80%;border-radius:6px;color:#777;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;margin:0 4px -3px}.activity .user{font-weight:600}.activity .details{padding-left:38px;display:flex;flex-direction:column;font-size:13px;color:#666}.activity .commit{display:flex;align-items:center}.activity .commit .sha,code{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace}.activity .commit .sha{margin-right:4px}.activity .commit .message{overflow:hidden;text-overflow:ellipsis;width:360px;white-space:nowrap}.activity .details&gt;.comment{overflow:hidden;text-overflow:ellipsis;display:block;width:420px;margin-top:6px;border-left:3px solid #777777b2;padding-left:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.added{color:#3fb950}.field.license.details{display:flex;justify-content:space-between}.achievement{display:flex;margin:4px 0}.achievement .icon{margin:0 4px;width:44px;height:44px}.achievement .text{font-size:12px;color:#666}.achievement .title{font-size:14px;color:#58a6ff}.achievement .gauge.info{color:#58a6ff}.achievement.x .title{color:#666}.achievement.x .gauge.info{color:#b0b0b0}.achievement.b .title{color:#9d8fff}.achievement.b .gauge.info{color:#9e91ff}.achievement.a .title{color:#d79533}.achievement.a .gauge.info{color:#e7bd69}.achievement.s .gauge.info,.achievement.s .title{color:#eb355e}.achievement .gh{border:1px solid currentColor;border-radius:16px;font-size:10px;padding:0 5px;white-space:nowrap}.achievement .gauge-arc,.achievement .gauge-base{stroke-width:6}code{background-color:#7777771f;display:inline-block;border-radius:6px;color:#777;padding:1px 5px;font-size:80%}:root{--color-calendar-graph-day-bg:#ebedf0;--color-calendar-graph-day-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-bg:#9be9a8;--color-calendar-graph-day-L2-bg:#40c463;--color-calendar-graph-day-L3-bg:#30a14e;--color-calendar-graph-day-L4-bg:#216e39;--color-calendar-halloween-graph-day-L1-bg:#ffee4a;--color-calendar-halloween-graph-day-L2-bg:#ffc501;--color-calendar-halloween-graph-day-L3-bg:#fe9600;--color-calendar-halloween-graph-day-L4-bg:#03001c;--color-calendar-winter-graph-day-L1-bg:#0a3069;--color-calendar-winter-graph-day-L2-bg:#0969da;--color-calendar-winter-graph-day-L3-bg:#54aeff;--color-calendar-winter-graph-day-L4-bg:#b6e3ff;--color-calendar-graph-day-L4-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L3-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L2-border:rgba(27,31,35,0.06);--color-calendar-graph-day-L1-border:rgba(27,31,35,0.06)}</style>
     <style/>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
@@ -57,7 +57,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"/>
                                     </svg>
-                                    1713 Releases
+                                    1718 Releases
                                 </div>
                                 <div class="field">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -75,7 +75,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M2.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V4.664a.25.25 0 00-.073-.177l-2.914-2.914a.25.25 0 00-.177-.073H2.75zM1 1.75C1 .784 1.784 0 2.75 0h7.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V1.75zm7 1.5a.75.75 0 01.75.75v1.5h1.5a.75.75 0 010 1.5h-1.5v1.5a.75.75 0 01-1.5 0V7h-1.5a.75.75 0 010-1.5h1.5V4A.75.75 0 018 3.25zm-3 8a.75.75 0 01.75-.75h4.5a.75.75 0 010 1.5h-4.5a.75.75 0 01-.75-.75z"/>
                                     </svg>
-                                    389k added, 376k removed
+                                    0 added, 0 removed
                                 </div>
                             </section>
                             <section>
@@ -89,13 +89,13 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
                                     </svg>
-                                    8530 Stargazers
+                                    8529 Stargazers
                                 </div>
                                 <div class="field">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                     </svg>
-                                    2421 Forkers
+                                    2422 Forkers
                                 </div>
                                 <div class="field">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -126,11 +126,11 @@
                                 <rect x="0" y="0" width="220" height="8" fill="white" rx="5"/>
                             </mask>
                             <rect mask="url(#issues-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                            <rect mask="url(#issues-bar)" x="0" y="0" width="47.214343055927216" height="8" fill="#238636"/>
-                            <rect mask="url(#issues-bar)" x="47.214343055927216" y="0" width="0" height="8" fill="#56d364"/>
-                            <rect mask="url(#issues-bar)" x="47.214343055927216" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="47.214343055927216" y="0" width="0" height="8" fill="#c9d1d9"/>
-                            <rect mask="url(#issues-bar)" x="47.214343055927216" y="0" width="172.78565694407277" height="8" fill="#8957e5"/>
+                            <rect mask="url(#issues-bar)" x="0" y="0" width="47.1764705882353" height="8" fill="#238636"/>
+                            <rect mask="url(#issues-bar)" x="47.1764705882353" y="0" width="0" height="8" fill="#56d364"/>
+                            <rect mask="url(#issues-bar)" x="47.1764705882353" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="47.1764705882353" y="0" width="0" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="47.1764705882353" y="0" width="172.8235294117647" height="8" fill="#8957e5"/>
                             <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#d2a8ff"/>
                             <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#8B949E"/>
                             <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#c9d1d9"/>
@@ -148,7 +148,7 @@
                                     <path fill="#8957e5" d="M11.28 6.78a.75.75 0 00-1.06-1.06L7.25 8.69 5.78 7.22a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.06 0l3.5-3.5z"/>
                                     <path fill="#8957e5" fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-1.5 0a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/>
                                 </svg>
-                                <span class="no-wrap">2935 <small>closed</small></span>
+                                <span class="no-wrap">2938 <small>closed</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -171,13 +171,13 @@
                                 <rect x="0" y="0" width="220" height="8" fill="white" rx="5"/>
                             </mask>
                             <rect mask="url(#pr-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                            <rect mask="url(#issues-bar)" x="0" y="0" width="8.843203436637005" height="8" fill="#238636"/>
-                            <rect mask="url(#issues-bar)" x="8.843203436637005" y="0" width="0" height="8" fill="#56d364"/>
-                            <rect mask="url(#issues-bar)" x="8.843203436637005" y="0" width="0" height="8" fill="#8B949E"/>
-                            <rect mask="url(#issues-bar)" x="8.843203436637005" y="0" width="0" height="8" fill="#c9d1d9"/>
-                            <rect mask="url(#issues-bar)" x="8.843203436637005" y="0" width="40.50322184719239" height="8" fill="#da3633"/>
-                            <rect mask="url(#issues-bar)" x="49.3464252838294" y="0" width="0" height="8" fill="#ff7b72"/>
-                            <rect mask="url(#issues-bar)" x="49.3464252838294" y="0" width="170.6535747161706" height="8" fill="#8957e5"/>
+                            <rect mask="url(#issues-bar)" x="0" y="0" width="8.158136684033098" height="8" fill="#238636"/>
+                            <rect mask="url(#issues-bar)" x="8.158136684033098" y="0" width="0" height="8" fill="#56d364"/>
+                            <rect mask="url(#issues-bar)" x="8.158136684033098" y="0" width="0" height="8" fill="#8B949E"/>
+                            <rect mask="url(#issues-bar)" x="8.158136684033098" y="0" width="0" height="8" fill="#c9d1d9"/>
+                            <rect mask="url(#issues-bar)" x="8.158136684033098" y="0" width="40.655838185718665" height="8" fill="#da3633"/>
+                            <rect mask="url(#issues-bar)" x="48.81397486975176" y="0" width="0" height="8" fill="#ff7b72"/>
+                            <rect mask="url(#issues-bar)" x="48.81397486975176" y="0" width="171.18602513024823" height="8" fill="#8957e5"/>
                             <rect mask="url(#issues-bar)" x="220" y="0" width="0" height="8" fill="#d2a8ff"/>
                         </svg>
                         <div class="followup legend field fill-width">
@@ -185,13 +185,13 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#238636" fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                 </svg>
-                                <span class="no-wrap">131 <small>open</small></span>
+                                <span class="no-wrap">121 <small>open</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#8957e5" fill-rule="evenodd" d="M5 3.254V3.25v.005a.75.75 0 110-.005v.004zm.45 1.9a2.25 2.25 0 10-1.95.218v5.256a2.25 2.25 0 101.5 0V7.123A5.735 5.735 0 009.25 9h1.378a2.251 2.251 0 100-1.5H9.25a4.25 4.25 0 01-3.8-2.346zM12.75 9a.75.75 0 100-1.5.75.75 0 000 1.5zm-8.5 4.5a.75.75 0 100-1.5.75.75 0 000 1.5z"/>
                                 </svg>
-                                <span class="no-wrap">2528 <small>merged</small></span>
+                                <span class="no-wrap">2539 <small>merged</small></span>
                             </div>
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -204,7 +204,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                     <path fill="#da3633" fill-rule="evenodd" d="M10.72 1.227a.75.75 0 011.06 0l.97.97.97-.97a.75.75 0 111.06 1.061l-.97.97.97.97a.75.75 0 01-1.06 1.06l-.97-.97-.97.97a.75.75 0 11-1.06-1.06l.97-.97-.97-.97a.75.75 0 010-1.06zM12.75 6.5a.75.75 0 00-.75.75v3.378a2.251 2.251 0 101.5 0V7.25a.75.75 0 00-.75-.75zm0 5.5a.75.75 0 100 1.5.75.75 0 000-1.5zM2.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.25 1a2.25 2.25 0 00-.75 4.372v5.256a2.251 2.251 0 101.5 0V5.372A2.25 2.25 0 003.25 1zm0 11a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
                                 </svg>
-                                <span class="no-wrap">600 <small>closed</small></span>
+                                <span class="no-wrap">603 <small>closed</small></span>
                             </div>
                         </div>
                     </section>
@@ -225,14 +225,14 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="381.0705959050032" height="8" fill="#e34c26"/>
-                    <rect mask="url(#languages-bar)" x="381.0705959050032" y="0" width="26.917117283872464" height="8" fill="#dea584"/>
-                    <rect mask="url(#languages-bar)" x="407.98771318887566" y="0" width="22.61733477714996" height="8" fill="#701516"/>
-                    <rect mask="url(#languages-bar)" x="430.6050479660256" y="0" width="9.892844328867499" height="8" fill="#A97BFF"/>
-                    <rect mask="url(#languages-bar)" x="440.4978922948931" y="0" width="8.994577264575769" height="8" fill="#4298b8"/>
-                    <rect mask="url(#languages-bar)" x="449.4924695594689" y="0" width="3.916045146439649" height="8" fill="#b07219"/>
-                    <rect mask="url(#languages-bar)" x="453.40851470590854" y="0" width="3.2982424961104737" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="456.706757202019" y="0" width="3.293242797981015" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="381.0589184192267" height="8" fill="#e34c26"/>
+                    <rect mask="url(#languages-bar)" x="381.0589184192267" y="0" width="26.916292438666346" height="8" fill="#dea584"/>
+                    <rect mask="url(#languages-bar)" x="407.97521085789305" y="0" width="22.630737883836478" height="8" fill="#701516"/>
+                    <rect mask="url(#languages-bar)" x="430.60594874172955" y="0" width="9.892541173624926" height="8" fill="#A97BFF"/>
+                    <rect mask="url(#languages-bar)" x="440.4984899153545" y="0" width="8.994301635731137" height="8" fill="#4298b8"/>
+                    <rect mask="url(#languages-bar)" x="449.49279155108565" y="0" width="3.9159251435793156" height="8" fill="#b07219"/>
+                    <rect mask="url(#languages-bar)" x="453.408716694665" y="0" width="3.298141425127172" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="456.7068581197921" y="0" width="3.2931418802079166" height="8" fill="#3178c6"/>
                 </svg>
                 <div class="field center horizontal-wrap fill-width">
                     <div class="field center no-wrap language">
@@ -321,81 +321,18 @@
                             <section class="activity">
                                 <div class="field">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
-                                        <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
-                                    </svg>
-                                    <div class="content">
-                                        <div class="user">csydvs</div>
-                                        opened
-                                        <span class="issue">#1689 Can't get provider injected state to actually work with Junit4</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>opened by csydvs in <span class="repo">pact-foundation/pact-jvm</span></div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                         <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
                                     </svg>
                                     <div class="content">
                                         <div class="user">YOU54F</div>
                                         commented on
-                                        <span class="issue">#3 chore: set host to ipv4 / 127.0.0.1</span>
-                                    </div>
-                                </div>
-                                <div class="details">
-                                    <div>opened by mefellows in <span class="repo">pact-foundation/pact-5-minute-getting-started-guide</span></div>
-                                    <div class="comment">
-                                        So it works with an arch lookup hack for Darwin arm64
-                                        <code>const hostname = process.arch === 'arm64' &amp;&amp; process.platform === 'darwin' ? "127.0.0.1" : "localhost"</code>
-                                        https://github.com/pact-foundation/pact-5-minute-getting-started-guide/commit/c0887194bb5e04299a12fe194656ab0066291c19
-https://github.com/pact-foundation/pact-5-minute-getting-started-guide/actions/runs/4820476266
-and against my local m1 macbook, where it was failing pre-fix replicating the users issue.
-I noted that we were using pact v10.x and pact-node, so updated the deps (I thought v10.x was ffi?)
-https://github.com/pact-foundation/pact-5-minute-getting-started-guide/commit/f4fb3c5314bf6e7b312cfb6ad7109ca2d59cb3a2
-looking into it, everyone fails using
-                                        <code>localhost</code>
-                                        It fails on the ARM 64 m1's
-https://cirrus-ci.com/build/5363872165527552
-the linux arm64 failures is due to no python tool chain in the node slim image.
-Man what a yak shave
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"/>
-                                    </svg>
-                                    <div class="content">
-                                        <div class="user">thiagodejesus</div>
-                                        starred
-                                        <span class="repo">pact-foundation/pact-js</span>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="row fill-width">
-                            <section class="activity">
-                                <div class="field">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/>
-                                        <path fill-rule="evenodd" d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/>
-                                    </svg>
-                                    <div class="content">
-                                        <div class="user">YOU54F</div>
-                                        opened
-                                        <span class="issue">#305 Release Tag out of date?</span>
+                                        <span class="issue">#307 Fix/display stderr on publish error</span>
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div>opened by YOU54F in <span class="repo">pact-foundation/pact-php</span></div>
+                                    <div class="comment">I can confirm this has worked and helped massively, as I've managed to work out why test was failing in linux on arm64 
+and before the error was just lost in the midst of time</div>
                                 </div>
                             </section>
                         </div>
@@ -403,25 +340,203 @@ Man what a yak shave
                             <section class="activity">
                                 <div class="field">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                        <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"/>
+                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
                                     </svg>
                                     <div class="content">
                                         <div class="user">YOU54F</div>
-                                        commented on
-                                        <span class="issue">#304 Fix tests</span>
+                                        pushed 17 commits in
+                                        <span class="repo">pact-foundation/pact-php</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>on branch <span class="code">arm64_ruby</span></div>
+                                    <div class="commit">
+                                        <div class="sha">#9b4aa27</div>
+                                        <div class="message">chore: cs-lint:</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#6ad0384</div>
+                                        <div class="message">ci(test): describeVersion test bork on aarch64 linux?!!</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#60ae161</div>
+                                        <div class="message">Merge branch 'fix/display_stderr_on_publish_error' into arm64_ruby</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#5cad9f7</div>
+                                        <div class="message">chore: remove unused imports and cs lint fixes</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#cfad002</div>
+                                        <div class="message">fix: return stderr and exit code in exception for standalone error</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#a4b5a41</div>
+                                        <div class="message">Merge branch 'fix/display_stderr_on_publish_error' of github.com:WaylandAce/pact-php into WaylandAce-fix/display_stderr_on_publish_error</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#16c3b6e</div>
+                                        <div class="message">chore: simplify code</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#26b226c</div>
+                                        <div class="message">Merge branch 'upstream_master' into fix/display_stderr_on_publish_error</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#7698d36</div>
+                                        <div class="message">chore: test fixes</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#a70d3ed</div>
+                                        <div class="message">chore: add missing import</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#9089082</div>
+                                        <div class="message">chore: add missing import</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#bbef6f3</div>
+                                        <div class="message">chore: catch proper exceptions</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#b9c5359</div>
+                                        <div class="message">chore: catch proper exceptions</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#4905417</div>
+                                        <div class="message">chore: fix mess with namespaces to match psr-4</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#6601c04</div>
+                                        <div class="message">feat: update phpstan/phpstan analyze tool</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#d7c1bde</div>
+                                        <div class="message">feat: update phpstan/phpstan analyze tool</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#a03051e</div>
+                                        <div class="message">fix: display stderr on pact publish process failure</div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
+                                    </svg>
+                                    <div class="content">
+                                        <div class="user">cfmack</div>
+                                        merged
+                                        <span class="issue">#288 fix: display stderr on pact publish process failure</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>opened by WaylandAce in <span class="repo">pact-foundation/pact-php</span></div>
+                                    <div>2 files changed <span class="code">++6 --11</span></div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/>
+                                    </svg>
+                                    <div class="content">
+                                        <div class="user">cfmack</div>
+                                        pushed 16 commits in
+                                        <span class="repo">pact-foundation/pact-php</span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div>on branch <span class="code">master</span></div>
+                                    <div class="commit">
+                                        <div class="sha">#52f2be4</div>
+                                        <div class="message">Merge pull request #307 from pact-foundation/fix/display_stderr_on_publish_error
+
+Fix/display stderr on publish error</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#d7b0b4f</div>
+                                        <div class="message">Merge branch 'master' into fix/display_stderr_on_publish_error</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#5cad9f7</div>
+                                        <div class="message">chore: remove unused imports and cs lint fixes</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#cfad002</div>
+                                        <div class="message">fix: return stderr and exit code in exception for standalone error</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#a4b5a41</div>
+                                        <div class="message">Merge branch 'fix/display_stderr_on_publish_error' of github.com:WaylandAce/pact-php into WaylandAce-fix/display_stderr_on_publish_error</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#16c3b6e</div>
+                                        <div class="message">chore: simplify code</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#26b226c</div>
+                                        <div class="message">Merge branch 'upstream_master' into fix/display_stderr_on_publish_error</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#7698d36</div>
+                                        <div class="message">chore: test fixes</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#a70d3ed</div>
+                                        <div class="message">chore: add missing import</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#9089082</div>
+                                        <div class="message">chore: add missing import</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#bbef6f3</div>
+                                        <div class="message">chore: catch proper exceptions</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#b9c5359</div>
+                                        <div class="message">chore: catch proper exceptions</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#4905417</div>
+                                        <div class="message">chore: fix mess with namespaces to match psr-4</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#6601c04</div>
+                                        <div class="message">feat: update phpstan/phpstan analyze tool</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#d7c1bde</div>
+                                        <div class="message">feat: update phpstan/phpstan analyze tool</div>
+                                    </div>
+                                    <div class="commit">
+                                        <div class="sha">#a03051e</div>
+                                        <div class="message">fix: display stderr on pact publish process failure</div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="row fill-width">
+                            <section class="activity">
+                                <div class="field">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
+                                    </svg>
+                                    <div class="content">
+                                        <div class="user">cfmack</div>
+                                        merged
+                                        <span class="issue">#307 Fix/display stderr on publish error</span>
                                     </div>
                                 </div>
                                 <div class="details">
                                     <div>opened by YOU54F in <span class="repo">pact-foundation/pact-php</span></div>
-                                    <div class="comment">I'll work out if this is a regression 
-a) in the pact-broker client (did it ever accept uri encoded spaces
-b) at PactFlow's end, at this is calling the PactFlow hosted test broker
-I do think it would be good to 
-a) use a locally spun up broker (its problematic on windows/macos runners, as no docker, so would have to be with ruby - although may it could be setup via an action?)
-b) if it is going to use the PF broker, all the data used should be setup by the test,(the "Animal Profile Service" is used in a few of the pact repos, but there isn't an equivalent in here 
-(The previous contributor who added the test, probably added it based on an example elsewhere, where it did setup the data)
-It is the challenge when a user just wants a single feature, implements in and makes a test with the best intentions.
-Hopefully this helps people out proceeding and getting them sweet sweet green builds</div>
+                                    <div>6 files changed <span class="code">++31 --70</span></div>
                                 </div>
                             </section>
                         </div>
@@ -479,7 +594,7 @@ Hopefully this helps people out proceeding and getting them sweet sweet green bu
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="31.169746748802186 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="31.212183436002736 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g xmlns="http://www.w3.org/2000/svg" transform="translate(5 4)" fill="none" fill-rule="evenodd">
@@ -540,7 +655,7 @@ Hopefully this helps people out proceeding and getting them sweet sweet green bu
                                 <div class="title">
                                     <span class="prefix">Great</span>
                                     developers
-                                    <span class="gh">ranked 238k out of 114m users</span>
+                                    <span class="gh">ranked 239k out of 114m users</span>
                                 </div>
                                 <div class="text">Published 80 public repositories</div>
                             </div>
@@ -769,7 +884,7 @@ Hopefully this helps people out proceeding and getting them sweet sweet green bu
                 </div>
             </section>
             <footer>
-                <span>Last updated 28 Apr 2023, 02:07:49 (timezone Europe/London) with lowlighter/metrics@3.33.0</span>
+                <span>Last updated 29 Apr 2023, 02:06:10 (timezone Europe/London) with lowlighter/metrics@3.33.0</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
