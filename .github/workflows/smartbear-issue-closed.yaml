@@ -13,7 +13,6 @@ on:
 jobs:
   if_merged:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true
     name: Transition Jira ticket to Close
     steps:
     - name: login
@@ -22,7 +21,6 @@ jobs:
         JIRA_BASE_URL: ${{ secrets.SMARTBEAR_JIRA_BASE_URL }}
         JIRA_USER_EMAIL: ${{ secrets.SMARTBEAR_JIRA_USER_EMAIL }}
         JIRA_API_TOKEN: ${{ secrets.SMARTBEAR_JIRA_API_TOKEN }}
-        ISSUE_TITLE: ${{ github.event.issue.title }}
 
     - name: Search
       id: search
