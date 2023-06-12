@@ -1,29 +1,26 @@
-name: SmartBear Supported Pull Request Merged
+name: SmartBear Supported Issue Closed
 
 # Example of trigger for this workflow:
 #
 # on:
-#   pull_request:
-#     types: 
+#   issues:
+#     types:
 #       - closed
 
 on:
-  workflow_call:  
-    
+  workflow_call:
+
 jobs:
   if_merged:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true
     name: Transition Jira ticket to Close
     steps:
     - name: login
       uses: atlassian/gajira-login@v3
+      env:
         JIRA_BASE_URL: ${{ secrets.SMARTBEAR_JIRA_BASE_URL }}
         JIRA_USER_EMAIL: ${{ secrets.SMARTBEAR_JIRA_USER_EMAIL }}
         JIRA_API_TOKEN: ${{ secrets.SMARTBEAR_JIRA_API_TOKEN }}
-        ISSUE_TITLE: ${{ github.event.issue.title }}
-
-    - run: echo ${{ github.event.pull_request.title }}
 
     - name: Search
       id: search
@@ -33,7 +30,6 @@ jobs:
 
     - name: Log
       run: echo "Found issue ${{ steps.search.outputs.issue }}"
-
 
     - name: Transition issue
       if: steps.search.outputs.issue != ''
