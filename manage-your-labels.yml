@@ -1,32 +1,38 @@
 LABEL_GROUPS:
   DEFAULT:
     bug:
-      description: Something isn't working
+      description: Indicates an unexpected problem or unintended behavior
       color: d73a4a
-    # awaiting feedback:
-    #   description: Awaiting Feedback
-    #   color: fbca04
-    # documentation:
-    #     description: Improvements or additions to documentation
-    #     color: c2e0c6
-    # duplicate:
-    #     description: This issue or pull request already exists
-    #     color: cfd3d7
-    # enhancement:
-    #   description: New feature or request
-    #   color: 84b6eb
-    # good first issue:
-    #   description: Good for newcomers
-    #   color: 5319e7
-    # help wanted:
-    #   description: Extra attention is needed
-    #   color: '128A0C'
-    # security:
-    #   description: Issues that have security implications
-    #   color: ff0000
-    # wontfix:
-    #   description: This will not be worked on
-    #   color: ffffff
+    awaiting feedback:
+      description: Awaiting Feedback from OP
+      color: fbca04
+    documentation:
+        description: Indicates a need for improvements or additions to documentation
+        color: c2e0c6
+    duplicate:
+        description: Indicates similar issues, pull requests, or discussions
+        color: cfd3d7
+    enhancement:
+      description: Indicates new feature requests
+      color: 84b6eb
+    good first issue:
+      description: Indicates a good issue for first-time contributors
+      color: 5319e7
+    help wanted:
+      description: Indicates that a maintainer wants help on an issue or pull request
+      color: '128A0C'
+    security:
+      description: Issues that have security implications
+      color: ff0000
+    wontfix:
+      description: Indicates that work won't continue on an issue, pull request, or discussion
+      color: ffffff
+    invalid:
+      description: Indicates that an issue, pull request, or discussion is no longer relevant
+      color: ff0000
+    question:
+      description: Indicates that an issue, pull request, or discussion needs more information
+      color: ffffff
   test:
     test-label:
       description: This is a test label
