@@ -1,5 +1,8 @@
 LABEL_GROUPS:
   DEFAULT:
+    # Don't use this, because there is a bug with archived repos
+    # See https://github.com/actions-automation/manage-your-labels/issues/4
+  all:
     bug:
       description: Something isn't working
       color: d73a4a
@@ -32,5 +35,8 @@ LABEL_GROUPS:
       description: This is a test label
       color: ffdda8
 REPOS:
+  pact-js:
+    - all
   test-project:
-    - test;
+    - all
+    - test
