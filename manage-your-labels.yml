@@ -1,5 +1,8 @@
 LABEL_GROUPS:
   DEFAULT:
+    triage:
+      description: This issue is yet to be triaged by a maintainer
+      color: 8250df
     bug:
       description: Indicates an unexpected problem or unintended behavior
       color: d73a4a
@@ -15,6 +18,9 @@ LABEL_GROUPS:
     enhancement:
       description: Indicates new feature requests
       color: 84b6eb
+    feature request:
+      description: Indicates new feature requests
+      color: FEF2C0
     good first issue:
       description: Indicates a good issue for first-time contributors
       color: 5319e7
@@ -33,13 +39,41 @@ LABEL_GROUPS:
     question:
       description: Indicates that an issue, pull request, or discussion needs more information
       color: ffffff
+    upstream:
+      description: Indicates that an issue relates to an upstream problem (such as in pact-reference)
+      color: 0969DA
   test:
     test-label:
       description: This is a test label
       color: ffdda8
+  smartbear-supported:
+    smartbear-supported:
+      description: 
+      color: FF730B
 REPOS:
   pact-js:
-    - all
-  test-project:
-    - all
-    - test
+    - smartbear-supported
+  pact-js-core:
+    - smartbear-supported
+  pact-net:
+    - smartbear-supported
+  pact-jvm:
+    - smartbear-supported
+  pact-ruby:
+    - smartbear-supported
+  pact-python:
+    - smartbear-supported
+  pact-go:
+    - smartbear-supported
+  pact-broker:
+    - smartbear-supported
+  pact-reference:
+    - smartbear-supported
+  pact-broker-docker:
+    - smartbear-supported
+  pact-ruby-standalone:
+    - smartbear-supported
+  pact-plugins:
+    - smartbear-supported
+  pact_broker-client:
+    - smartbear-supported
