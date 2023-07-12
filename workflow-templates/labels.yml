@@ -1,0 +1,14 @@
+name: Apply Pact Foundation Label Policy
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+jobs:
+  mirror-labels:
+    runs-on: ubuntu-latest
+    env:
+      BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+    name: manage-your-labels
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-automation/manage-your-labels@main
