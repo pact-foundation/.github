@@ -11,4 +11,4 @@ jobs:
     name: manage-your-labels
     steps:
       - uses: actions/checkout@v2
-      - uses: actions-automation/manage-your-labels@main
+      - uses: pact-foundation/manage-your-labels@v0.0.1
