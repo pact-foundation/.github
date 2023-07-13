@@ -48,7 +48,7 @@ LABEL_GROUPS:
       color: ffdda8
   smartbear-supported:
     smartbear-supported:
-      description: 
+      description: Indicates that a tracking ticket has been created in SmartBear's internal Jira, which we will use to prioritise and assign a team member to this task. 
       color: FF730B
 REPOS:
   pact-js:
