@@ -1,13 +1,8 @@
 name: Add New Issues to Triage Board
 
 on:
-  issues:
-    types:
-      - opened
-      - labeled
-  pull_request:
-    types:
-      - labeled
+  workflow_call:
+
 jobs:
   add-to-project:
     name: Add issue to project
