@@ -28,7 +28,7 @@ LABEL_GROUPS:
       description: Indicates that a maintainer wants help on an issue or pull request
       color: '128A0C'
     security:
-      description: Issues that have security implications
+      description: Indicates a security issue or vulnerability
       color: ff0000
     wontfix:
       description: Indicates that work won't continue on an issue, pull request, or discussion
@@ -48,7 +48,7 @@ LABEL_GROUPS:
       color: ffdda8
   smartbear-supported:
     smartbear-supported:
-      description: Indicates that a tracking ticket has been created in SmartBear's internal Jira, which we will use to prioritise and assign a team member to this task. 
+      description: SmartBear engineering team will support this issue. See https://docs.pact.io/help/smartbear
       color: FF730B
 REPOS:
   pact-js:
