@@ -1,0 +1,23 @@
+name: Add New Issues to Triage Board
+
+on:
+  issues:
+    types:
+      - opened
+      - labeled
+  pull_request:
+    types:
+      - labeled
+jobs:
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v0.5.0
+        with:
+          project-url: https://github.com/orgs/pact-foundation/projects/16
+          github-token: ${{ secrets.TRIAGE_PROJECT_ISSUE_TOKEN }}
+          # If needed, can use 
+          # labeled: bug, needs-triage
+          # label-operator: OR
+ 
