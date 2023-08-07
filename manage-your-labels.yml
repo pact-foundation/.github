@@ -65,7 +65,7 @@ REPOS:
     - smartbear-supported
   pact-go:
     - smartbear-supported
-  pact-broker:
+  pact_broker:
     - smartbear-supported
   pact-reference:
     - smartbear-supported
@@ -73,7 +73,31 @@ REPOS:
     - smartbear-supported
   pact-ruby-standalone:
     - smartbear-supported
+  pact-ruby-cli:
+    - smartbear-supported
+  pact-message-ruby:
+    - smartbear-supported
   pact-plugins:
     - smartbear-supported
   pact_broker-client:
+    - smartbear-supported
+  pact-provider-verifier:
+    - smartbear-supported
+  pact-mock-service:
+    - smartbear-supported
+  pact-specification:
+    - smartbear-supported
+  pact.io:
+    - smartbear-supported
+  docs.pact.io:
+    - smartbear-supported
+  devrel:
+    - smartbear-supported
+  pact-stub-server:
+    - smartbear-supported
+  pact-compatibility-suite:
+    - smartbear-supported
+  pact-cplusplus:
+    - smartbear-supported
+  pact-support:
     - smartbear-supported
