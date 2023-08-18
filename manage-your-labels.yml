@@ -18,9 +18,9 @@ LABEL_GROUPS:
     enhancement:
       description: Indicates new feature requests
       color: 84b6eb
-    feature request:
-      description: Indicates new feature requests
-      color: FEF2C0
+    breaking change:
+      description: Indicates a proposed breaking change
+      color: d73a4a
     good first issue:
       description: Indicates a good issue for first-time contributors
       color: 5319e7
