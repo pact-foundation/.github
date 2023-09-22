@@ -1,14 +1,30 @@
-name: Apply Pact Foundation Label Policy
+name: Labels
+
 on:
-  schedule:
-    - cron: "0 12 * * *"
-  workflow_dispatch:
+  # For downstream repos, we want to run this on a schedule
+  # so that updates propagate automatically. Weekly is probably
+  # enough.
+  # schedule:
+  #   - cron: "20 0 * * 0"
+  push:
+    branches:
+      - master
+    paths:
+      - .github/labels.yml
+
 jobs:
-  mirror-labels:
+  sync-labels:
+    name: Synchronise labels
+
     runs-on: ubuntu-latest
-    env:
-      BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-    name: manage-your-labels
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: pact-foundation/manage-your-labels@v0.0.1
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Synchronize labels
+        uses: EndBug/label-sync@v2
+        with:
+          config-file: |
+            https://raw.githubusercontent.com/pact-foundation/.github/main/.github/labels.yml
+            .github/labels.yml
