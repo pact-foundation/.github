@@ -13,6 +13,6 @@ jobs:
           project-url: https://github.com/orgs/pact-foundation/projects/16
           github-token: ${{ secrets.TRIAGE_PROJECT_ISSUE_TOKEN }}
           # If needed, can use 
-          # labeled: bug, needs-triage
-          # label-operator: OR
+          labeled: triage
+          label-operator: OR
  
