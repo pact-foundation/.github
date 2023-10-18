@@ -26,5 +26,5 @@ jobs:
         uses: EndBug/label-sync@v2
         with:
           config-file: |
-            https://raw.githubusercontent.com/pact-foundation/.github/main/.github/labels.yml
+            https://raw.githubusercontent.com/pact-foundation/.github/master/.github/labels.yml
             .github/labels.yml
