@@ -18,6 +18,7 @@ jobs:
     steps:
     - name: login
       uses: atlassian/gajira-login@v3
+      env:
         JIRA_BASE_URL: ${{ secrets.SMARTBEAR_JIRA_BASE_URL }}
         JIRA_USER_EMAIL: ${{ secrets.SMARTBEAR_JIRA_USER_EMAIL }}
         JIRA_API_TOKEN: ${{ secrets.SMARTBEAR_JIRA_API_TOKEN }}
