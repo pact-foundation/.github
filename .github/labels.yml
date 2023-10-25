@@ -42,7 +42,7 @@
 
 - name: status:awaiting-feedback
   description: Waiting for more information from the reporter
-  colors: "000000"
+  color: "000000"
   aliases:
     - awaiting feedback
 
