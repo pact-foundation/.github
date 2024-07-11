@@ -1,47 +1,34 @@
-# Pact -  Integration testing done properly
+# Pact
 
-> Fast, easy and reliable testing for integrating web apps, APIs and microservices
+<!-- markdownlint-disable no-inline-html -->
 
-##  Say goodbye to end-to-end testing
+<div align="center"><table><tr><td>
+<b>Pact</b> is the de-facto API contract testing tool. Replace expensive and brittle end-to-end integration tests with fast, reliable and easy to debug unit tests.
 
-> Testing microservices shouldn't involve setting up complex end-to-end test environments, creating lengthy integration suites and managing test data. Stop wasting time, and start releasing.
+<ul style="list-style-type: none">
+    <li>⚡ Lightning fast</li>
+    <li>🎈 Effortless full-stack integration testing - from the front-end to the back-end</li>
+    <li>🔌 Supports HTTP/REST and event-driven systems</li>
+    <li>🛠️ Configurable mock server</li>
+    <li>😌 Powerful matching rules prevents brittle tests</li>
+    <li>🤝 Integrates with Pact Broker / PactFlow for powerful CI/CD workflows</li>
+    <li>🔡 Supports 12+ languages</li>
+</ul>
 
-- [Pact.io](https://pact.io/)
-- [docs.pact.io](https://docs.pact.io/)
-- [slack.pact.io](https://slack.pact.io/)
+<b>Why use Pact?</b> Contract testing with Pact lets you:
 
-### Find bugs in dev
-![dev](https://raw.githubusercontent.com/pact-foundation/pact.io/master/pages/assets/img/icons/theme/devices/laptop-macbook.svg)
-Prevent integration issues before you commit, instead of in production or during integration test Prevent integration issues before you commit, instead of in production or during integration test
+<ul style="list-style-type: none">
+    <li>⚡ Test locally</li>
+    <li>🚀 Deploy faster</li>
+    <li>⬇️ Reduce the lead time for change</li>
+    <li>💰 Reduce the cost of API integration testing</li>
+    <li>💥 Prevent breaking changes</li>
+    <li>🔎 Understand your system usage</li>
+    <li>📃 Document your APIs for free</li>
+    <li>🗄 Remove the need for complex data fixtures</li>
+    <li>🤷‍♂️ Reduce the reliance on complex test environments</li>
+</ul>
 
-### Deploy faster, safer & more often
-![dev](https://raw.githubusercontent.com/pact-foundation/pact.io/master/pages/assets/img/icons/theme/general/thunder-move.svg) 
-Pact provides a guarantee that systems are compatible, so you can deploy your microservices and web apps independently and safely
+Watch our <a href="https://www.youtube.com/playlist?list=PLwy9Bnco-IpfZ72VQ7hce8GicVZs7nm0i">series</a> on the problems with end-to-end integrated tests, and how contract testing can help.
 
-### Remove complex end-to-end environments
-![dev](https://raw.githubusercontent.com/pact-foundation/pact.io/master/pages/assets/img/icons/theme/devices/server.svg)
-Reduce (or removing entirely) the need for complex, costly and hard-to-manage integration test environments
-
-### Stop relying on unreliable test data
-![dev](https://raw.githubusercontent.com/pact-foundation/pact.io/master/pages/assets/img/icons/theme/files/deleted-file.svg)
-Finding and managing test data is a key pain point for engineering teams - with Pact, you can significantly reduce your reliance on flakey test data
-
-### Say goodbye to painful release processes
-![wave](https://raw.githubusercontent.com/pact-foundation/pact.io/master/pages/assets/img/icons/theme/general/smile.svg)
-With Pact and the Pact Broker, you can orchestrate complex CI and CD pipelines and use can-i-deploy to tell you when a component is safe to release
-
-### Collaborate with the Pact Broker
-![Collaborate](https://raw.githubusercontent.com/pact-foundation/pact.io/master/pages/assets/img/icons/theme/communication/group.svg)
-Integrate into your CI/CD pipelines, manage and promote contracts with the Pact Broker
-
-### Work offline with API stubs
-![Work](https://raw.githubusercontent.com/pact-foundation/pact.io/master/pages/assets/img/icons/theme/devices/router-1.svg)
-Pact's API stubs are guaranteed to represent behaviour of the real system, so you can test with confidence
-
-### Create bulletproof pipelines
-![Create](https://raw.githubusercontent.com/pact-foundation/pact.io/master/pages/assets/img/icons/theme/code/option.svg)
-Pact CLI tools + Pact Broker = powerful automation capabilities
-
-## Stats
-
-![Metrics](https://github.com/pact-foundation/.github/blob/master/github-metrics.svg)
+</td></tr></table></div>
