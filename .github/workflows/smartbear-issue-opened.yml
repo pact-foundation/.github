@@ -24,7 +24,7 @@ jobs:
 
     - name: Search
       id: search
-      uses: tomhjp/gh-action-jira-search@v0.1.0
+      uses: tomhjp/gh-action-jira-search@v0.2.2
       with:
         jql: 'summary ~ "${{ github.event.repository.name }}#${{ github.event.issue.number }}:" AND project=${{ vars.SMARTBEAR_JIRA_PROJECT }}'
 
