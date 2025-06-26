@@ -8,7 +8,7 @@ jobs:
     name: Add issue to project
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/add-to-project@v0.5.0
+      - uses: actions/add-to-project@v0.6.1
         with:
           project-url: https://github.com/orgs/pact-foundation/projects/16
           github-token: ${{ secrets.TRIAGE_PROJECT_ISSUE_TOKEN }}
