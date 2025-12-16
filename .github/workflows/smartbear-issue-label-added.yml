@@ -77,10 +77,6 @@ jobs:
           const expectedSummary = `${context.repo.repo}#${context.issue.number}: ${context.payload.issue.title}`;
           const jql = `summary ~ "\\"${expectedSummary}\\"" AND project=${process.env.JIRA_PROJECT}`;
           const searchUrl = `${jiraBaseUrl}/rest/api/3/search/jql`;
-          
-          console.log(`Searching Jira for summary: ${expectedSummary}`);
-          console.log(`JQL: ${jql}`);
-          
           const searchBody = {
             jql: jql,
             maxResults: 10,
