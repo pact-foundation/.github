@@ -14,46 +14,138 @@ jobs:
   create-issue-in-pactflow-jira:
     runs-on: ubuntu-latest
     if: github.event.label.name == 'smartbear-supported'
+    permissions:
+      issues: write
     steps:
-    - name: Login
-      uses: atlassian/gajira-login@v3
+    - name: Search and Create Jira Issue
+      id: jira
+      uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
       env:
         JIRA_BASE_URL: ${{ secrets.SMARTBEAR_JIRA_BASE_URL }}
         JIRA_USER_EMAIL: ${{ secrets.SMARTBEAR_JIRA_USER_EMAIL }}
         JIRA_API_TOKEN: ${{ secrets.SMARTBEAR_JIRA_API_TOKEN }}
-
-    - name: Search
-      id: search
-      uses: tomhjp/gh-action-jira-search@v0.2.2
+        JIRA_PROJECT: ${{ vars.SMARTBEAR_JIRA_PROJECT }}
+        JIRA_EPIC_TICKET: ${{ secrets.SMARTBEAR_JIRA_EPIC_TICKET }}
+        JIRA_LAYER_CAKE: ${{ secrets.SMARTBEAR_JIRA_LAYER_CAKE }}
       with:
-        jql: 'summary ~ "${{ github.event.repository.name }}#${{ github.event.issue.number }}:" AND project=${{ vars.SMARTBEAR_JIRA_PROJECT }}'
-
-    - name: Log
-      run: echo "Found issue ${{ steps.search.outputs.issue }}"
-
-    - name: Create
-      id: create
-      uses: atlassian/gajira-create@v3
-      if: steps.search.outputs.issue == ''
-      with:
-        project: ${{ vars.SMARTBEAR_JIRA_PROJECT }}
-        issuetype: Task
-        summary: '${{ github.event.repository.name }}#${{ github.event.issue.number }}: ${{ github.event.issue.title }}'
-        description: |
-          *Issue Link:* ${{ github.event.issue.html_url }}
-
-          ${{ github.event.issue.body }}
-        fields: '{"customfield_10006": ${{ toJSON(secrets.SMARTBEAR_JIRA_EPIC_TICKET) }}, "customfield_17401":{"value":${{ toJSON( secrets.SMARTBEAR_JIRA_LAYER_CAKE )}}}}'
+        script: |
+          const https = require('https');
+          const http = require('http');
+          const { URL } = require('url');
+          
+          const jiraBaseUrl = process.env.JIRA_BASE_URL;
+          const auth = Buffer.from(`${process.env.JIRA_USER_EMAIL}:${process.env.JIRA_API_TOKEN}`).toString('base64');
+          
+          const makeRequest = (url, method = 'GET', body = null) => {
+            return new Promise((resolve, reject) => {
+              const urlObj = new URL(url);
+              const options = {
+                hostname: urlObj.hostname,
+                port: urlObj.port,
+                path: urlObj.pathname + urlObj.search,
+                method: method,
+                headers: {
+                  'Authorization': `Basic ${auth}`,
+                  'Content-Type': 'application/json',
+                  'Accept': 'application/json'
+                }
+              };
+              
+              if (body) {
+                options.headers['Content-Length'] = Buffer.byteLength(JSON.stringify(body));
+              }
+              
+              const client = urlObj.protocol === 'https:' ? https : http;
+              const req = client.request(options, (res) => {
+                let data = '';
+                res.on('data', chunk => data += chunk);
+                res.on('end', () => {
+                  if (res.statusCode >= 200 && res.statusCode < 300) {
+                    resolve(JSON.parse(data));
+                  } else {
+                    reject(new Error(`HTTP ${res.statusCode}: ${data}`));
+                  }
+                });
+              });
+              
+              req.on('error', reject);
+              if (body) req.write(JSON.stringify(body));
+              req.end();
+            });
+          };
+          
+          const expectedSummary = `${context.repo.repo}#${context.issue.number}: ${context.payload.issue.title}`;
+          const jql = `summary ~ "\\"${expectedSummary}\\"" AND project=${process.env.JIRA_PROJECT}`;
+          const searchUrl = `${jiraBaseUrl}/rest/api/3/search/jql`;
+          const searchBody = {
+            jql: jql,
+            maxResults: 10,
+            fields: ["key", "summary"]
+          };
+          
+          const searchResponse = await makeRequest(searchUrl, 'POST', searchBody);
+          console.log(`Search response: ${JSON.stringify(searchResponse, null, 2)}`);
+          
+          if (searchResponse.issues && searchResponse.issues.length > 0) {
+            const matchingIssue = searchResponse.issues.find(issue => 
+              issue.fields.summary === expectedSummary
+            );
+            
+            if (matchingIssue) {
+              console.log(`Found existing issue: ${matchingIssue.key} with exact summary match`);
+              core.setOutput('issue', matchingIssue.key);
+              core.setOutput('created', 'false');
+              return;
+            } else {
+              console.log(`Found issues but none match exact summary: "${expectedSummary}"`);
+            }
+          }
+          
+          console.log('No existing issue found, creating new one');
+          
+          const createUrl = `${jiraBaseUrl}/rest/api/3/issue`;
+          const issueData = {
+            fields: {
+              project: { key: process.env.JIRA_PROJECT },
+              issuetype: { name: 'Task' },
+              summary: `${context.repo.repo}#${context.issue.number}: ${context.payload.issue.title}`,
+              description: {
+                type: 'doc',
+                version: 1,
+                content: [
+                  {
+                    type: 'paragraph',
+                    content: [
+                      { type: 'text', text: 'Issue Link: ', marks: [{ type: 'strong' }] },
+                      { type: 'text', text: context.payload.issue.html_url, marks: [{ type: 'link', attrs: { href: context.payload.issue.html_url } }] }
+                    ]
+                  },
+                  {
+                    type: 'paragraph',
+                    content: [{ type: 'text', text: context.payload.issue.body || '' }]
+                  }
+                ]
+              },
+              customfield_10006: process.env.JIRA_EPIC_TICKET,
+              customfield_17401: { value: process.env.JIRA_LAYER_CAKE }
+            }
+          };
+          
+          const createResponse = await makeRequest(createUrl, 'POST', issueData);
+          const newIssue = createResponse.key;
+          console.log(`Created new issue: ${newIssue}`);
+          core.setOutput('issue', newIssue);
+          core.setOutput('created', 'true');
 
     - name: Add Comment
-      if: steps.search.outputs.issue == '' && steps.create.outputs.issue != ''
-      uses: actions/github-script@v7
+      if: steps.jira.outputs.created == 'true'
+      uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
       with:
-        github-token: ${{secrets.GITHUB_TOKEN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
-          github.rest.issues.createComment({
+          await github.rest.issues.createComment({
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: "🤖 Great news! We've labeled this issue as <i>smartbear-supported</i> and created a tracking ticket in PactFlow's Jira (<a href='https://smartbear.atlassian.net/browse/${{steps.create.outputs.issue}}'><code>${{steps.create.outputs.issue}}</code></a>). We'll keep work public and post updates here. Meanwhile, feel free to check out our <a href='https://docs.pact.io/help/smartbear'>docs</a>. Thanks for your patience!"
+            body: "👋 Hi! The 'smartbear-supported' label has just been added to this issue, which will create an internal tracking ticket in PactFlow's Jira (${{ steps.jira.outputs.issue }}). We will use this to prioritise and assign a team member to this task. All activity will be public on this ticket. For now, sit tight and we'll update this ticket once we have more information on the next steps. <br/><br/>See our <a href='https://docs.pact.io/help/smartbear'>documentation</a> for more information."
           })
